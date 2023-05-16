@@ -1,0 +1,23 @@
+<resources>
+    <!-- TITULOS -->
+    <string name="app_name">Distribuidora de Electronica</string>
+    <string name="titulo1">Inicia sesión</string>
+    <string name="titulo2">Registro de usuarios</string>
+    <string name="titulo3">Menu Principal</string>
+
+    <!-- BOTONES -->
+    <string name="boton1">Ingresar</string>
+    <string name="boton2">Registrarse</string>
+    <string name="boton3">Confirmar registro</string>
+    <string name="boton4">Ver productos</string>
+    <string name="boton5">Comprar</string>
+
+    <!-- PLACEHOLDER -->
+    <string name="placeHolder1">Usuario</string>
+    <string name="placeHolder2">Contraseña</string>
+
+    <!-- TEXTO INFORMATIVO -->
+    <string name="textInfo">¿No estás registrado? Registrate aqui</string>
+    <string name="textInfo2">Ingrese un usuario</string>
+    <string name="textInfo3">Ingrese una contraseña</string>
+</resources>
