@@ -21,6 +21,3 @@ La "Distribuidora de Electrónica" es un proyecto de aplicación móvil desarrol
 
 **Contribuciones:**
 ¡Contribuciones bienvenidas! Si deseas mejorar la aplicación, corregir errores o agregar nuevas características, envía un pull request siguiendo las pautas de contribución.
-
-**Licencia:**
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más información.
