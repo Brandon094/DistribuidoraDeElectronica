@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -10,8 +12,29 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Base.Theme.DistribuidoraDeElectronica"
+        android:theme="@style/TemaClaro"
         tools:targetApi="31">
+        <activity
+            android:name=".EditarUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".GestionarVentas"
+            android:exported="false" />
+        <activity
+            android:name=".GenerarInforme"
+            android:exported="false" />
+        <activity
+            android:name=".GestionarProductos"
+            android:exported="false" />
+        <activity
+            android:name=".GestionarUsuariosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Comprar"
+            android:exported="false" />
+        <activity
+            android:name=".VerProdutos"
+            android:exported="false" />
         <activity
             android:name=".MenuAdmin"
             android:exported="false" />

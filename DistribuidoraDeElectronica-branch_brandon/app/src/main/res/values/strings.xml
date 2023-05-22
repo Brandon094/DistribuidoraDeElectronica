@@ -4,6 +4,10 @@
     <string name="titulo1">Inicia sesión</string>
     <string name="titulo2">Registro de usuarios</string>
     <string name="titulo3">Menu Principal</string>
+    <string name="titulo4">Menu Principal Administrador</string>
+    <string name="titulo5">Productos</string>
+    <string name="titulo6">Compras</string>
+    <string name="titulo7">Gestionar Usuario</string>
 
     <!-- BOTONES -->
     <string name="boton1">Ingresar</string>
@@ -11,6 +15,14 @@
     <string name="boton3">Confirmar registro</string>
     <string name="boton4">Ver productos</string>
     <string name="boton5">Comprar</string>
+    <string name="boton6">Gestionar Usuarios</string>
+    <string name="boton7">Gestionar Productos</string>
+    <string name="boton8">Gestionar Ventas</string>
+    <string name="boton9">Generar informe</string>
+    <string name="boton10">Cambiar tema</string>
+    <string name="boton11">Agregar</string>
+    <string name="boton12">Borrar</string>
+    <string name="boton13">Actualizar</string>
 
     <!-- PLACEHOLDER -->
     <string name="placeHolder1">Usuario</string>
@@ -20,4 +32,11 @@
     <string name="textInfo">¿No estás registrado? Registrate aqui</string>
     <string name="textInfo2">Ingrese un usuario</string>
     <string name="textInfo3">Ingrese una contraseña</string>
+    <string name="textInfo4">Nombre producto</string>
+    <string name="textInfo5">Descripcion del producto</string>
+    <string name="textInfo6">Precio del producto</string>
+    <string-array name="user_types">
+        <item>Usuario</item>
+        <item>Administrador</item>
+    </string-array>
 </resources>

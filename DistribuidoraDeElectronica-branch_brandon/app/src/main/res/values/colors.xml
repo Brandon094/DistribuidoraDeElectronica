@@ -3,4 +3,16 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FF0000</color>
+
+    <!-- Colores para el tema claro -->
+    <color name="colorPrimaryClaro">#FF6200EE</color>
+    <color name="colorPrimaryDarkClaro">#DD3700B3</color>
+    <color name="colorAccentClaro">#03DAC5</color>
+    <color name="backgroundClaro">#FFFFFF</color>
+
+    <!-- Colores para el tema oscuro -->
+    <color name="colorPrimaryOscuro">#6200EE</color>
+    <color name="colorPrimaryDarkOscuro">#3700B3</color>
+    <color name="colorAccentOscuro">#BB86FC</color>
+    <color name="backgroundOscuro">#121212</color>
 </resources>

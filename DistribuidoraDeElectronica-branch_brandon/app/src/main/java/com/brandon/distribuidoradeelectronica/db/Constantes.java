@@ -17,6 +17,7 @@ public class Constantes {
     public static final String PRODUCTOS = "productos";
     public static final String DESCRIPCION_PRODUCTOS = "descripcion";
     public static final String CANTIDAD_PRODUCTOS = "cantidad";
+    public static final String PRECIO = "precio";
 
     // INFO TABLA ADMINISTRADORES
     public static final String NOMBRE_TABLA_ADMIN = "t_administradores";
@@ -29,7 +30,8 @@ public class Constantes {
     public static final String TablaProductos = "CREATE TABLE IF NOT EXISTS " +
             NOMBRE_TABLA_PRODUCTO + " (" + ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
             PRODUCTOS + " TEXT NOT NULL," + DESCRIPCION_PRODUCTOS + " TEXT NOT NULL," +
-            CANTIDAD_PRODUCTOS + " INTEGER NOT NULL)";
+            CANTIDAD_PRODUCTOS + " INTEGER NOT NULL," +
+            PRECIO + " REAL NOT NULL)";
 
     public static final String TablaAdmin = "CREATE TABLE IF NOT EXISTS " +
             NOMBRE_TABLA_ADMIN + " (" + ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +

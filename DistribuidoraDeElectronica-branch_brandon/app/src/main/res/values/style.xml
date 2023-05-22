@@ -2,8 +2,19 @@
 
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.DistribuidoraDeElectronica" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <style name="TemaClaro" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryClaro</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkClaro</item>
+        <item name="colorAccent">@color/colorAccentClaro</item>
+        <item name="android:windowBackground">@color/backgroundClaro</item>
+        <!-- Personaliza otros atributos para el tema claro aquí -->
+    </style>
+
+    <style name="TemaOscuro" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryOscuro</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkOscuro</item>
+        <item name="colorAccent">@color/colorAccentOscuro</item>
+        <item name="android:windowBackground">@color/backgroundOscuro</item>
+        <!-- Personaliza otros atributos para el tema oscuro aquí -->
     </style>
 </resources>

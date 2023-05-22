@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerProdutos">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="160dp"
+        android:text="@string/titulo5"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <ImageButton
+            android:id="@+id/btnProducto01"
+            android:layout_width="171dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:onClick="onProductoClicked"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pc1" />
+
+        <ImageButton
+            android:id="@+id/btnProducto02"
+            android:layout_width="172dp"
+            android:layout_height="104dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:onClick="onProductoClicked"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pc2" />
+
+        <ImageButton
+            android:id="@+id/btnProducto03"
+            android:layout_width="169dp"
+            android:layout_height="117dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:onClick="onProductoClicked"
+            android:scaleType="centerCrop"
+            android:src="@drawable/allinone" />
+
+        <ImageButton
+            android:id="@+id/btnProducto04"
+            android:layout_width="169dp"
+            android:layout_height="125dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:onClick="onProductoClicked"
+            android:scaleType="centerCrop"
+            android:src="@drawable/smartphone1" />
+
+        <ImageButton
+            android:id="@+id/btnProducto05"
+            android:layout_width="168dp"
+            android:layout_height="129dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:onClick="onProductoClicked"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pc3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="14dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <ImageButton
+            android:id="@+id/btnProducto06"
+            android:layout_width="171dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:onClick="onProductoClicked"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pc3" />
+
+        <ImageButton
+            android:id="@+id/btnProducto07"
+            android:layout_width="172dp"
+            android:layout_height="104dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:onClick="onProductoClicked"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pc2" />
+
+        <ImageButton
+            android:id="@+id/btnProducto08"
+            android:layout_width="169dp"
+            android:layout_height="117dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:onClick="onProductoClicked"
+            android:scaleType="centerCrop"
+            android:src="@drawable/allinone" />
+
+        <ImageButton
+            android:id="@+id/btnProducto09"
+            android:layout_width="169dp"
+            android:layout_height="125dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:onClick="onProductoClicked"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pc1" />
+
+        <ImageButton
+            android:id="@+id/btnProducto010"
+            android:layout_width="168dp"
+            android:layout_height="129dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:onClick="onProductoClicked"
+            android:scaleType="centerCrop"
+            android:src="@drawable/smartphone2" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
