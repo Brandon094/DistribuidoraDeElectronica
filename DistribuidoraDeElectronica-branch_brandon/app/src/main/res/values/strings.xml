@@ -8,6 +8,8 @@
     <string name="titulo5">Productos</string>
     <string name="titulo6">Compras</string>
     <string name="titulo7">Gestionar Usuario</string>
+    <string name="titulo8">Gestionar Ventas</string>
+    <string name="titulo9">Gestionar Productos</string>
 
     <!-- BOTONES -->
     <string name="boton1">Ingresar</string>
@@ -21,8 +23,6 @@
     <string name="boton9">Generar informe</string>
     <string name="boton10">Cambiar tema</string>
     <string name="boton11">Agregar</string>
-    <string name="boton12">Borrar</string>
-    <string name="boton13">Actualizar</string>
 
     <!-- PLACEHOLDER -->
     <string name="placeHolder1">Usuario</string>

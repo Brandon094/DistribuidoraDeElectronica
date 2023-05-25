@@ -15,6 +15,15 @@
         android:theme="@style/TemaClaro"
         tools:targetApi="31">
         <activity
+            android:name=".EditarVenta"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroProductos"
+            android:exported="false" />
+        <activity
+            android:name=".EditarProducto"
+            android:exported="false" />
+        <activity
             android:name=".EditarUsuario"
             android:exported="false" />
         <activity

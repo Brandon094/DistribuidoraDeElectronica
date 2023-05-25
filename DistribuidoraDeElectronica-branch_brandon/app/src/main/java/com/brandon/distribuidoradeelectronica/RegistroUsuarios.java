@@ -41,9 +41,7 @@ public class RegistroUsuarios extends AppCompatActivity {
                 // Crear una instancia de Usuario con los valores ingresados
                 Usuario usuarioObjeto = new Usuario(usuario, contraseña);
 
-                // Crear una instancia de DbHelper y SQLiteDatabase
-                DbHelper dbHelper = new DbHelper(getApplicationContext());
-                SQLiteDatabase db = dbHelper.getWritableDatabase();
+                // Crear una instancia de Manager Db
                 ManagerDB managerDB = new ManagerDB(RegistroUsuarios.this);
 
                 // Validar campos
@@ -58,7 +56,6 @@ public class RegistroUsuarios extends AppCompatActivity {
                     // Inserción exitosa, mostrar mensaje
                     Toast.makeText(RegistroUsuarios.this, "Registro exitoso",
                             Toast.LENGTH_SHORT).show();
-
                     // Redirigir a la actividad del menú principal
                     Intent intent = new Intent(RegistroUsuarios.this, MenuPrincipal.class);
                     startActivity(intent);

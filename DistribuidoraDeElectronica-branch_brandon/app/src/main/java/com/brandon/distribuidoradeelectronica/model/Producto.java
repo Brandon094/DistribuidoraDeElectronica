@@ -2,7 +2,9 @@ package com.brandon.distribuidoradeelectronica.model;
 
 import androidx.annotation.NonNull;
 
-public class Producto {
+import java.io.Serializable;
+
+public class Producto implements Serializable {
     private int id;
     private String nombre;
     private String descripción;
@@ -13,7 +15,7 @@ public class Producto {
     public Producto() {
     }
 
-    public Producto(int id, String nombre, String descripción, double precio, String imagen, int cantidad) {
+    public Producto(int id, String nombre, String descripción, int cantidad, double precio, String imagen) {
         this.id = id;
         this.nombre = nombre;
         this.descripción = descripción;

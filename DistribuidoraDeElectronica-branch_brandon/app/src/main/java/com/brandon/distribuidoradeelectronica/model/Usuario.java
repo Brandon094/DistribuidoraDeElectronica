@@ -2,7 +2,7 @@ package com.brandon.distribuidoradeelectronica.model;
 
 import java.io.Serializable;
 
-public class Usuario  implements Serializable {
+public class Usuario implements Serializable {
     private String nombre;
     private String contraseña;
 
@@ -27,4 +27,11 @@ public class Usuario  implements Serializable {
         this.contraseña = contraseña;
     }
 
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "nombre='" + nombre + '\'' +
+                ", contraseña='" + contraseña + '\'' +
+                '}';
+    }
 }

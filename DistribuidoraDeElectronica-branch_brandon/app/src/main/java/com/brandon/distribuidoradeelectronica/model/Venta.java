@@ -1,8 +1,9 @@
 package com.brandon.distribuidoradeelectronica.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Venta {
+public class Venta implements Serializable {
     private int id;
     private Producto producto;
     private int cantidad;
@@ -55,5 +56,16 @@ public class Venta {
 
     public void setFecha(Date fecha) {
         this.fecha = fecha;
+    }
+
+    @Override
+    public String toString() {
+        return "Venta{" +
+                "id=" + id +
+                ", producto=" + producto +
+                ", cantidad=" + cantidad +
+                ", precioTotal=" + precioTotal +
+                ", fecha=" + fecha +
+                '}';
     }
 }

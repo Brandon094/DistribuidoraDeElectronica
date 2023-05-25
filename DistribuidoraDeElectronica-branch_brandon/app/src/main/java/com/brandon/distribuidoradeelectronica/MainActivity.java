@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         managerDB = new ManagerDB(MainActivity.this);
 
         // Obtener una instancia de SQLiteDatabase para interactuar con la base de datos
-        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        //SQLiteDatabase db = dbHelper.getWritableDatabase();
 
         // Insertar administrador inicial si no existe
         if (!managerDB.existeAdministrador()) {
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 // Verificar si la base de datos está abierta
-                if (managerDB.openDatabase(db)) {
+                if (managerDB.openDatabase()) {
                     if (userType.equals("Usuario")) {
                         // Validar el usuario ingresado como usuario regular
                         boolean usuarioValidado = managerDB.validarUsuario(usuarioObjeto);
