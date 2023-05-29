@@ -10,6 +10,11 @@
     <string name="titulo7">Gestionar Usuario</string>
     <string name="titulo8">Gestionar Ventas</string>
     <string name="titulo9">Gestionar Productos</string>
+    <string name="titulo10">Agregar Productos</string>
+    <string name="titulo11">Agregar Ventas</string>
+    <string name="titulo12">Editar Usuario</string>
+    <string name="titulo13">Editar Producto</string>
+    <string name="titulo14">Editar Venta</string>
 
     <!-- BOTONES -->
     <string name="boton1">Ingresar</string>
@@ -35,6 +40,17 @@
     <string name="textInfo4">Nombre producto</string>
     <string name="textInfo5">Descripcion del producto</string>
     <string name="textInfo6">Precio del producto</string>
+    <string name="textInfo7">Nombre Producto</string>
+    <string name="textInfo8">Descripcion Producto</string>
+    <string name="textInfo9">Precio Producto</string>
+    <string name="textInfo10">Catidad Producto</string>
+    <string name="textInfo11">Nombre Producto Vendido</string>
+    <string name="textInfo12">Fecha Producto Vendido</string>
+    <string name="textInfo13">Precio Producto Vendido</string>
+    <string name="textInfo14">Catidad Producto Vendido</string>
+    <string name="textInfo15">Usuario Actual</string>
+    <string name="textInfo16">Contraseña Actual</string>
+
     <string-array name="user_types">
         <item>Usuario</item>
         <item>Administrador</item>

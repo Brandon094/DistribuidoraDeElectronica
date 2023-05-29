@@ -1,4 +1,4 @@
-package com.brandon.distribuidoradeelectronica;
+package com.brandon.distribuidoradeelectronica.menus;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.brandon.distribuidoradeelectronica.R;
+import com.brandon.distribuidoradeelectronica.gestion.GestionarProductos;
+import com.brandon.distribuidoradeelectronica.gestion.GestionarUsuariosActivity;
+import com.brandon.distribuidoradeelectronica.gestion.GestionarVentas;
 
 public class MenuAdmin extends AppCompatActivity {
     private Button botonGestionarUsuarios;
@@ -47,17 +52,6 @@ public class MenuAdmin extends AppCompatActivity {
             public void onClick(View v) {
                 // Crear una instancia de Intent para iniciar la actividad GestionarVentas
                 Intent intent = new Intent(MenuAdmin.this, GestionarVentas.class);
-                startActivity(intent);
-            }
-        });
-
-        // Configurar el botón para generar informe para abrir la actividad de generar informe
-        botonGenerarInforme = findViewById(R.id.btnGenerarInforme);
-        botonGenerarInforme.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Crear una instancia de Intent para iniciar la actividad GenerarInforme
-                Intent intent = new Intent(MenuAdmin.this, GenerarInforme.class);
                 startActivity(intent);
             }
         });

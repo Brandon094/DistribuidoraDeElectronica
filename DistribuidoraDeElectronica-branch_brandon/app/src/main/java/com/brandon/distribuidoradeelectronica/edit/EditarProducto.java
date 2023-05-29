@@ -1,8 +1,10 @@
-package com.brandon.distribuidoradeelectronica;
+package com.brandon.distribuidoradeelectronica.edit;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.brandon.distribuidoradeelectronica.R;
 
 public class EditarProducto extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.brandon.distribuidoradeelectronica;
+package com.brandon.distribuidoradeelectronica.listViewUtils;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -10,6 +10,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.brandon.distribuidoradeelectronica.db.ManagerDB;
+import com.brandon.distribuidoradeelectronica.edit.EditarProducto;
+import com.brandon.distribuidoradeelectronica.edit.EditarUsuario;
+import com.brandon.distribuidoradeelectronica.edit.EditarVenta;
 import com.brandon.distribuidoradeelectronica.model.Producto;
 import com.brandon.distribuidoradeelectronica.model.Usuario;
 import com.brandon.distribuidoradeelectronica.model.Venta;
@@ -19,7 +22,14 @@ import java.util.List;
 
 public class ListViewUtils {
 
-    // Método para mostrar datos en un ListView y configurar el listener para las acciones de editar y eliminar
+    /**
+     * Método para mostrar datos en un ListView y configurar el listener para las acciones de editar y eliminar.
+     *
+     * @param activity   La actividad actual.
+     * @param listaDatos La lista de datos a mostrar en el ListView.
+     * @param managerDB  El objeto ManagerDB para realizar operaciones en la base de datos.
+     * @param listViewId El ID del ListView en la interfaz.
+     */
     public static void mostrarDatosEnListView(Activity activity, List<?> listaDatos, ManagerDB managerDB, int listViewId) {
         // Obtener referencia al ListView en la interfaz
         ListView listView = activity.findViewById(listViewId);
@@ -56,6 +66,7 @@ public class ListViewUtils {
                                     if (datoSeleccionado instanceof Usuario) {
                                         Intent intent = new Intent(activity, EditarUsuario.class);
                                         intent.putExtra("usuario", (Usuario) datoSeleccionado);
+                                        intent.putExtra("contraseña", (Usuario) datoSeleccionado);
                                         activity.startActivity(intent);
                                     } else if (datoSeleccionado instanceof Producto) {
                                         Intent intent = new Intent(activity, EditarProducto.class);

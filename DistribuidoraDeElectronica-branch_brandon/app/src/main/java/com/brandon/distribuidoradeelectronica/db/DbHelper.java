@@ -20,6 +20,7 @@ public class DbHelper extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL(Constantes.TablaUsuarios);
         sqLiteDatabase.execSQL(Constantes.TablaAdmin);
         sqLiteDatabase.execSQL(Constantes.TablaProductos);
+        sqLiteDatabase.execSQL(Constantes.TablaVentas);
     }
 
     @Override

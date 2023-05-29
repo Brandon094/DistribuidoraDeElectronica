@@ -1,4 +1,4 @@
-package com.brandon.distribuidoradeelectronica;
+package com.brandon.distribuidoradeelectronica.verProductos;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.brandon.distribuidoradeelectronica.R;
+import com.brandon.distribuidoradeelectronica.compra.Comprar;
 import com.brandon.distribuidoradeelectronica.model.Producto;
 
 public class VerProdutos extends AppCompatActivity implements View.OnClickListener {
@@ -57,41 +59,40 @@ public class VerProdutos extends AppCompatActivity implements View.OnClickListen
     public void onClick(View v) {
         // Verificar qué botón de imagen se ha clicado y realizar la acción correspondiente
         if (v == botonProducto01) {
-            onProductoClicked(producto.getImagen(), producto.getNombre(), producto.getDescripción(),
+            onProductoClicked(producto.getNombre(), producto.getDescripcion(),
                               producto.getPrecio(), producto.getCantidad());
         } else if (v == botonProducto02) {
-            onProductoClicked(producto.getImagen(), producto.getNombre(), producto.getDescripción(),
+            onProductoClicked(producto.getNombre(), producto.getDescripcion(),
                               producto.getPrecio(), producto.getCantidad());
         } else if (v == botonProducto03) {
-            onProductoClicked(producto.getImagen(), producto.getNombre(), producto.getDescripción(),
+            onProductoClicked(producto.getNombre(), producto.getDescripcion(),
                               producto.getPrecio(), producto.getCantidad());
         } else if (v == botonProducto04) {
-            onProductoClicked(producto.getImagen(), producto.getNombre(), producto.getDescripción(),
+            onProductoClicked(producto.getNombre(), producto.getDescripcion(),
                               producto.getPrecio(), producto.getCantidad());
         } else if (v == botonProducto05) {
-            onProductoClicked(producto.getImagen(), producto.getNombre(), producto.getDescripción(),
+            onProductoClicked(producto.getNombre(), producto.getDescripcion(),
                               producto.getPrecio(), producto.getCantidad());
         } else if (v == botonProducto06) {
-            onProductoClicked(producto.getImagen(), producto.getNombre(), producto.getDescripción(),
+            onProductoClicked(producto.getNombre(), producto.getDescripcion(),
                               producto.getPrecio(), producto.getCantidad());
         } else if (v == botonProducto07) {
-            onProductoClicked(producto.getImagen(), producto.getNombre(), producto.getDescripción(),
+            onProductoClicked(producto.getNombre(), producto.getDescripcion(),
                               producto.getPrecio(), producto.getCantidad());
         } else if (v == botonProducto08) {
-            onProductoClicked(producto.getImagen(), producto.getNombre(), producto.getDescripción(),
+            onProductoClicked(producto.getNombre(), producto.getDescripcion(),
                               producto.getPrecio(), producto.getCantidad());
         } else if (v == botonProducto09) {
-            onProductoClicked(producto.getImagen(), producto.getNombre(), producto.getDescripción(),
+            onProductoClicked(producto.getNombre(), producto.getDescripcion(),
                               producto.getPrecio(), producto.getCantidad());
         } else if (v == botonProducto010) {
-            onProductoClicked(producto.getImagen(), producto.getNombre(), producto.getDescripción(),
+            onProductoClicked(producto.getNombre(), producto.getDescripcion(),
                               producto.getPrecio(), producto.getCantidad());
         }
     }
-    private void onProductoClicked(String nombreImagen, String nombreProducto, String descripcionProducto, double precioProducto, int cantidadProducto) {
+    private void onProductoClicked(String nombreProducto, String descripcionProducto, double precioProducto, int cantidadProducto) {
         // Acciones a realizar cuando se hace clic en un botón de imagen
         Intent intent = new Intent(VerProdutos.this, Comprar.class);
-        intent.putExtra("nombreImagen", nombreImagen); // Pasa el nombre de la imagen como extra
         intent.putExtra("nombreProducto", nombreProducto); // Pasa el nombre del producto como extra
         intent.putExtra("descripcionProducto", descripcionProducto); // Pasa la descripción del producto como extra
         intent.putExtra("precioProducto", precioProducto); // Pasa el precio del producto como extra

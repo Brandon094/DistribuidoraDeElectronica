@@ -1,4 +1,4 @@
-package com.brandon.distribuidoradeelectronica;
+package com.brandon.distribuidoradeelectronica.gestion;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,8 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
+import com.brandon.distribuidoradeelectronica.listViewUtils.ListViewUtils;
+import com.brandon.distribuidoradeelectronica.R;
+import com.brandon.distribuidoradeelectronica.registros.RegistroUsuarios;
 import com.brandon.distribuidoradeelectronica.db.DbHelper;
 import com.brandon.distribuidoradeelectronica.db.ManagerDB;
 import com.brandon.distribuidoradeelectronica.model.Usuario;

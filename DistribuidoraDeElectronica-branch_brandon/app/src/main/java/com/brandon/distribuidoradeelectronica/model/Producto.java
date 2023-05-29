@@ -13,22 +13,35 @@ public class Producto implements Serializable {
     private int cantidad;
 
     public Producto() {
+        // Constructor vacío necesario para Firebase
     }
 
-    public Producto(int id, String nombre, String descripción, int cantidad, double precio, String imagen) {
+    public Producto(int id, String nombre,
+                    double precio, int cantidad,
+                    String descripción) {
         this.id = id;
         this.nombre = nombre;
         this.descripción = descripción;
         this.precio = precio;
-        this.imagen = imagen;
         this.cantidad = cantidad;
     }
+
+    public Producto(String nombre, String descripción,
+                    double precio, int cantidad) {
+        this.nombre = nombre;
+        this.descripción = descripción;
+        this.precio = precio;
+        this.cantidad = cantidad;
+    }
+
+    // Métodos Getter y Setter
 
     public int getId() {
         return id;
     }
 
     public void setId(int id) {
+
         this.id = id;
     }
 
@@ -40,11 +53,11 @@ public class Producto implements Serializable {
         this.nombre = nombre;
     }
 
-    public String getDescripción() {
+    public String getDescripcion() {
         return descripción;
     }
 
-    public void setDescripción(String descripción) {
+    public void setDescripcion(String descripción) {
         this.descripción = descripción;
     }
 
@@ -56,27 +69,21 @@ public class Producto implements Serializable {
         this.precio = precio;
     }
 
-    public String getImagen() {
-        return imagen;
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
     }
 
-    public void setImagen(String imagen) {
-        this.imagen = imagen;
+    public int getCantidad() {
+        return cantidad;
     }
-
-    public void setCantidad(int cantidad){ this.cantidad = cantidad; }
-
-    public int getCantidad(){ return cantidad;}
 
     @NonNull
     @Override
     public String toString() {
-        return "ID: " + id +
-                "\nNombre: " + nombre +
-                "\nDescripción: " + descripción +
-                "\nPrecio: " + precio +
-                "\nImagen: " + imagen +
-                "\nCantidad: " + cantidad;
+        return "ID: " + "\t" + id +
+                "\nNombre: " + "\t" + nombre +
+                "\nDescripción: " + "\t" + descripción +
+                "\nPrecio: " + "\t" + precio +
+                "\nCantidad: " + "\t" + cantidad;
     }
-
 }
