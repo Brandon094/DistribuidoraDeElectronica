@@ -16,7 +16,6 @@ public class MenuAdmin extends AppCompatActivity {
     private Button botonGestionarUsuarios;
     private Button botonGestionarProductos;
     private Button botonGestionarVentas;
-    private Button botonGenerarInforme;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

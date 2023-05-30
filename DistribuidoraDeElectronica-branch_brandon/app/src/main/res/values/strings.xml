@@ -28,6 +28,7 @@
     <string name="boton9">Generar informe</string>
     <string name="boton10">Cambiar tema</string>
     <string name="boton11">Agregar</string>
+    <string name="boton12">Confirmar edicion</string>
 
     <!-- PLACEHOLDER -->
     <string name="placeHolder1">Usuario</string>
@@ -45,11 +46,18 @@
     <string name="textInfo9">Precio Producto</string>
     <string name="textInfo10">Catidad Producto</string>
     <string name="textInfo11">Nombre Producto Vendido</string>
-    <string name="textInfo12">Fecha Producto Vendido</string>
+    <string name="textInfo12">Fecha Producto Vendido (AAAA-MM-DD)</string>
     <string name="textInfo13">Precio Producto Vendido</string>
     <string name="textInfo14">Catidad Producto Vendido</string>
     <string name="textInfo15">Usuario Actual</string>
     <string name="textInfo16">Contraseña Actual</string>
+    <string name="textInfo17">Producto Actual</string>
+    <string name="textInfo18">Precio Actual</string>
+    <string name="textInfo19">Cantidad Actual</string>
+    <string name="textInfo20">Venta actual</string>
+    <string name="textInfo21">Precio venta actual</string>
+    <string name="textInfo22">Cantidad venta actual</string>
+
 
     <string-array name="user_types">
         <item>Usuario</item>

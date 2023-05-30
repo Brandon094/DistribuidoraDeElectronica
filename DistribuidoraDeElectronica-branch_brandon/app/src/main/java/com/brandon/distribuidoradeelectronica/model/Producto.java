@@ -16,9 +16,7 @@ public class Producto implements Serializable {
         // Constructor vacío necesario para Firebase
     }
 
-    public Producto(int id, String nombre,
-                    double precio, int cantidad,
-                    String descripción) {
+    public Producto(int id, String nombre, double precio, int cantidad, String descripción) {
         this.id = id;
         this.nombre = nombre;
         this.descripción = descripción;
@@ -26,12 +24,18 @@ public class Producto implements Serializable {
         this.cantidad = cantidad;
     }
 
-    public Producto(String nombre, String descripción,
-                    double precio, int cantidad) {
+    public Producto(String nombre, String descripción, double precio, int cantidad) {
         this.nombre = nombre;
         this.descripción = descripción;
         this.precio = precio;
         this.cantidad = cantidad;
+    }
+
+    public Producto(String nombre, double precio, int cantidad, String descripción) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.cantidad = cantidad;
+        this.descripción = descripción;
     }
 
     // Métodos Getter y Setter

@@ -16,6 +16,7 @@ import com.brandon.distribuidoradeelectronica.gestion.GestionarVentas;
 import com.brandon.distribuidoradeelectronica.model.Venta;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class RegistroVentas extends AppCompatActivity {
@@ -52,11 +53,11 @@ public class RegistroVentas extends AppCompatActivity {
                 // Validar que los campos obligatorios no estén vacíos
                 List<Object> campos = new ArrayList<>();
                 campos.add(nombreVenta);
-                //campos.add(fechaVenta);
+                campos.add(fechaVenta);
 
                 boolean camposValidos = managerDB.validarCampos(campos.toArray());
 
-                if (!camposValidos) {
+                if (camposValidos) {
                     Toast.makeText(RegistroVentas.this, "Por favor complete todos los campos",
                             Toast.LENGTH_LONG).show();
                     return;
@@ -78,25 +79,20 @@ public class RegistroVentas extends AppCompatActivity {
                 double precioVenta = Double.parseDouble(precioTotalVenta);
                 int c_Ventas = Integer.parseInt(cantidadVenta);
 
-                //LocalDate fechaVenta = LocalDate.now();
-
                 // Crear una instancia de Venta con los valores ingresados
-                Venta venta = new Venta(nombreVenta, c_Ventas, precioVenta,
-                        fechaVenta);
+                Venta venta = new Venta(nombreVenta, c_Ventas, precioVenta, fechaVenta);
 
                 // Insertar la venta en la base de datos
-                long resultado = managerDB.insertVentas(venta.getNombreVenta(),
-                        String.valueOf(venta.getCantidadVenta()),
+                long resultado = managerDB.insertVentas(venta.getNombreVenta(), String.valueOf(venta.getCantidadVenta()),
                         String.valueOf(venta.getPrecioTotalVenta()),
-                        String.valueOf(venta.getFechaVentas()));
+                        String.valueOf(venta.getFechasVentas()));
 
                 if (resultado != -1) {
                     // Inserción exitosa, mostrar mensaje
                     Toast.makeText(RegistroVentas.this, "Registro exitoso", Toast.LENGTH_SHORT).show();
-                    // Redirigir a la actividad de gestión de ventas
+                    LimpiarCajasText();
                     Intent intent = new Intent(RegistroVentas.this, GestionarVentas.class);
                     startActivity(intent);
-                    LimpiarCajasText();
                 } else {
                     // Ocurrió un error durante la inserción, mostrar mensaje de error
                     Toast.makeText(RegistroVentas.this, "Error al registrar venta",

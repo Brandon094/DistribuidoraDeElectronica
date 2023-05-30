@@ -4,7 +4,7 @@ public class Constantes {
 
     // INFO DE LA DB
     public static final String NOMBRE_DB = "distribuidora";
-    public static final int VERSION_DB = 1;
+    public static final int VERSION_DB = 2;
 
     // INFO TABLA USUARIOS
     public static final String NOMBRE_TABLA = "t_usuarios";
@@ -22,7 +22,7 @@ public class Constantes {
     // INFO TABLA VENTAS
     public static final String NOMBRE_TABLA_VENTA = "t_ventas";
     public static final String VENTA_ID = "id";
-    public static final String VENTA_PRODUCTO = "producto_id";
+    public static final String VENTA_PRODUCTO = "producto";
     public static final String VENTA_CANTIDAD = "cantidad";
     public static final String VENTA_PRECIO_TOTAL = "precio_total";
     public static final String VENTA_FECHA = "fecha";
@@ -47,7 +47,7 @@ public class Constantes {
     // TABLA VENTAS
     public static final String TablaVentas = "CREATE TABLE IF NOT EXISTS " +
             NOMBRE_TABLA_VENTA + " (" + VENTA_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
-            VENTA_PRODUCTO + " INTEGER NOT NULL," + VENTA_CANTIDAD + " INTEGER NOT NULL," +
+            VENTA_PRODUCTO + " TEXT NOT NULL," + VENTA_CANTIDAD + " INTEGER NOT NULL," +
             VENTA_PRECIO_TOTAL + " REAL NOT NULL," + VENTA_FECHA + " TEXT NOT NULL)";
 
     // TABLA ADMINISTRADORES

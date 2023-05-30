@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.brandon.distribuidoradeelectronica.gestion.GestionarUsuariosActivity;
 import com.brandon.distribuidoradeelectronica.menus.MenuPrincipal;
 import com.brandon.distribuidoradeelectronica.R;
 import com.brandon.distribuidoradeelectronica.db.ManagerDB;
@@ -68,6 +69,8 @@ public class RegistroUsuarios extends AppCompatActivity {
                             // Inserción exitosa, mostrar mensaje
                             Toast.makeText(RegistroUsuarios.this, "Registro exitoso", Toast.LENGTH_SHORT).show();
                             LimpiarCajasText();
+                            Intent intent = new Intent(RegistroUsuarios.this, GestionarUsuariosActivity.class);
+                            startActivity(intent);
                         } else {
                             // Ocurrió un error durante la inserción, mostrar mensaje de error
                             Toast.makeText(RegistroUsuarios.this, "Error al registrar usuario", Toast.LENGTH_SHORT).show();

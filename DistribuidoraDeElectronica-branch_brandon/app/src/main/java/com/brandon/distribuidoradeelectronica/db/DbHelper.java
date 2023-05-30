@@ -28,5 +28,6 @@ public class DbHelper extends SQLiteOpenHelper {
         // Método llamado cuando se actualiza la versión de la base de datos
         // Aquí puedes realizar operaciones como modificar la estructura de la base de datos
         // Si no necesitas realizar ninguna operación, puedes dejar este método vacío
+        // Verifica la versión antigua y la nueva para determinar qué operaciones realizar
     }
 }

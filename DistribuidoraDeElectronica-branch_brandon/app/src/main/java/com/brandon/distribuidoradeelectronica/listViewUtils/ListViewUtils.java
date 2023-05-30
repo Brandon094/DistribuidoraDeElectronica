@@ -66,7 +66,6 @@ public class ListViewUtils {
                                     if (datoSeleccionado instanceof Usuario) {
                                         Intent intent = new Intent(activity, EditarUsuario.class);
                                         intent.putExtra("usuario", (Usuario) datoSeleccionado);
-                                        intent.putExtra("contraseña", (Usuario) datoSeleccionado);
                                         activity.startActivity(intent);
                                     } else if (datoSeleccionado instanceof Producto) {
                                         Intent intent = new Intent(activity, EditarProducto.class);
